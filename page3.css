@@ -1,0 +1,157 @@
+body {
+    background-color: gray;
+    margin: 0px;
+}
+
+.sky {
+    position: relative;
+    background-image: url(./images/sky.jpg);
+    background-size: cover;
+    z-index: 0;
+    height: 1110px;
+    width: 100%;
+    overflow-x: hidden;
+    animation: sky1 30s linear infinite;
+}
+
+@keyframes sky1 {
+
+    /* 15%{
+        background-image: url(./images/sky.jpg);
+    } */
+    45% {
+        background-image: url(./images/sky.jpg);
+    }
+
+    60% {
+        background-image: url(./images/nightsky.jpg);
+    }
+
+    75% {
+        background-image: url(./images/nightsky.jpg);
+    }
+
+    99% {
+        background-image: url(./images/nightsky.jpg);
+    }
+}
+
+.city {
+    position: absolute;
+    background-image: url(./images/city.png);
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+    bottom: 200px;
+    height: 300px;
+    width: 500%;
+    animation: city1 6s linear infinite;
+
+}
+
+@keyframes city1 {
+    100% {
+        transform: translateX(-410px);
+    }
+}
+
+.road {
+    position: absolute;
+    display: block;
+    background-image: url(./images/road.jpg);
+    z-index: 2;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 250px;
+    width: 500%;
+    animation: road1 6s linear infinite;
+
+}
+
+@keyframes road1 {
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+.sun {
+    position: absolute;
+    background-image: url(./images/sun.png);
+    background-size: cover;
+    z-index: 0;
+    height: 110px;
+    width: 110px;
+    right: -10vw;
+    top: 200px;
+
+    animation: sun1 30s linear infinite;
+
+}
+
+@keyframes sun1 {
+    50% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(-200vw);
+    }
+}
+.moon{
+    position: absolute;
+    background-image: url(./images/moonpng.png);
+    background-size: cover;
+    z-index: 0;
+    height: 110px;
+    width: 110px;
+    right: -110vw;
+    top: 200px;
+
+    animation: moon1 30s linear infinite;
+
+}
+
+@keyframes moon1 {
+    50% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(-200vw);
+    }
+}
+.vechile{
+    position: absolute;
+    bottom: 180px;
+    left: 550px;
+}
+#car{
+    position: absolute;
+}
+#flag1{
+    position: absolute;
+    bottom:-63px;
+    left: 282px;
+}
+#wheel1{
+position: absolute;
+bottom: -144px;
+left: 31px;
+animation: rotate 18s linear infinite;
+}
+#wheel2{
+    position: absolute;
+    bottom: -144px;
+    left: 252px;
+    animation: rotate 18s linear infinite;
+}
+@keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(3600deg);
+        }
+
+}
